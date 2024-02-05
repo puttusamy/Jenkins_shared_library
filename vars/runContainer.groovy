@@ -1,4 +1,3 @@
 def call(){
-    sh 'docker stop youtube1'
-    sh 'docker rm youtube1'
+    sh "docker run -d --name youtube1 -p 3000:3000 puttusamy/youtube:latest"
 }
